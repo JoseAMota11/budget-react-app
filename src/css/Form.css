@@ -1,0 +1,12 @@
+.field-a, .field-b {
+  display: flex;
+  flex-direction: column;
+}
+
+.add__form {
+  width: 100%;
+}
+
+label {
+  margin-bottom: .4rem;
+}

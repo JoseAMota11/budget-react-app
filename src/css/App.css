@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  background-image: radial-gradient(circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90%);
+}
+
+.main__content {
+  width: 36rem;
+  height: max-content;
+  padding: 2.4rem 0 6.4rem 0;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.4rem;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  gap: 1rem;
+  box-shadow: 0 0 1.6rem #3334;
+}
+
+.title {
+  color: #fefefe;
+  margin-top: 2rem;
+}
+
+.form__container {
+  width: 46rem;
+  height: max-content;
+  padding: 2.4rem 0 6.4rem 0;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  border-radius: 1.4rem;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  gap: 1rem;
+  box-shadow: 0 0 1.6rem #3334;
+}
+
+.side-a, .side-b {
+  width: 340px;;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-b {
+  justify-content: space-between;
+}
+
+.budget {
+  padding: .6rem 1rem;
+  align-self: center;
+  background-color: #3332;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: .4rem;
+}
+
+.danger {
+  color: #c33;
+}
+
+.warning {
+  color: #b4a801;
+}
+
+.success {
+  color: #2a2;
+}
+
+.danger, .warning, .success {
+  font-weight: 600;
+}
+
+@media (max-width: 740px) {
+  .form__container {
+    width: 32rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app__container {
+    overflow-y: auto;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main__content {
+    width: 32rem;
+  }
+  .form__container {
+    width: 26rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .main__content {
+    width: 28rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .main__content {
+    width: 24rem;
+  }
+  .form__container {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .main__content {
+    width: 100%;
+    border-radius: 0;
+  }
+  .form__container {
+    width: 100%;
+    border-radius: 0;
+  }
+  .app__container {
+    padding: 0;
+  }
+}
